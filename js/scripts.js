@@ -8,6 +8,8 @@ $('document').ready(function(){
         $('.site-header').hide();
         $('.trabajos-clientes').hide();
         $('.nuestra-gente').hide();
+        $('.nosotros').hide();
+        $('.site-footer').hide();
         $('.menu-mobile').fadeIn(300);
 
       });
@@ -16,6 +18,8 @@ $('document').ready(function(){
         $('.site-header').show();
         $('.trabajos-clientes').show();
         $('.nuestra-gente').show();
+        $('.nosotros').show();
+        $('.site-footer').show();
         
     });
 });
