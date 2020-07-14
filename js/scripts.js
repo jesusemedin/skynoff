@@ -1,8 +1,7 @@
 $('site-header').hide()
 $('document').ready(function(){
-    console.log("DOM loaded");
-
     $('.cargando').fadeOut('1000')
+    console.log("DOM loaded");
 
     //MENU
     $('.abrir-menu').on('click', function(){
