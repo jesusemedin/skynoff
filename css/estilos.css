@@ -5,6 +5,11 @@
     --colorprimario: #061551;
     --colorsecundario: #f2f7ff;
 }
+/* CSS rules to specify families
+
+font-family: 'Dancing Script', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Martel', serif; */
 /* GLOBLALES */
 html
 {
@@ -20,6 +25,7 @@ body
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
+    background-color: var(--colorsecundario);
 }
 img
 {
@@ -43,6 +49,14 @@ h4
 }
 
 /* UTILIDADES */
+.contenedor
+{
+    width: 95%;
+    /* Maximo ancho (toma todo disponible sin pasarte de 1200px */
+    max-width: 100rem; /* = 120px */
+    margin-left: auto;
+    margin-right: auto;
+}
 .seccion
 {
     margin-top: 2rem;
@@ -244,6 +258,7 @@ video{
     flex-wrap: wrap;
     width: 100%;
     height: auto;
+    position: relative;
 }
 @media (min-width: 768px){
 }
@@ -264,6 +279,67 @@ video{
         flex-basis: 33.3%;
     }
 }
-.trabajos-clientes h3{
+.trabajos-clientes div{
+position: absolute;
+left: 0;
+top: 100%;
 
+width: 100%;
+text-align: center;
+}
+.trabajos-clientes div::after{
+    content: url(../img/arrowdown.png);
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin: 0 auto;
+}
+.trabajos-clientes h2{
+    margin: 0 auto;
+    padding: 2rem;
+    color: var(--colorsecundario);
+    background-color: var(--colorprimario);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.5;
+}
+/* NUESTRA GENTE */
+.nuestra-gente{
+    text-align: center;
+    font-family: 'Martel', serif;
+    color: var(--logoprimario);
+    margin-top: 30rem;
+}
+.nuestra-gente h2{
+    font-size: 3rem;
+}
+@media (min-width: 768px){
+    .nuestra-gente{
+    margin-top: 15rem;
+}
+}
+.gente h3, p{
+    margin: 0;
+}
+@media (min-width: 768px){
+    .gente{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gente div{
+        flex-basis: calc(50% - 1rem);
+    }
+}
+.gente p{
+    font-family: 'Roboto', sans-serif;
+    color: #808080;
+}
+.gente div{
+    margin-bottom: 3rem;
+}
+.gente img{
+    max-width: 30rem;
+    max-height: 30rem;
 }

@@ -6,11 +6,16 @@ $('document').ready(function(){
     //MENU
     $('.abrir-menu').on('click', function(){
         $('.site-header').hide();
+        $('.trabajos-clientes').hide();
+        $('.nuestra-gente').hide();
         $('.menu-mobile').fadeIn(300);
 
       });
     $('.menu-mobile img').on('click', function(){
         $('.menu-mobile').fadeOut(300);
         $('.site-header').show();
+        $('.trabajos-clientes').show();
+        $('.nuestra-gente').show();
+        
     });
 });
