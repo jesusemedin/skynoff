@@ -99,6 +99,9 @@ h4
 .cargando img{
     width: 50%;
 }
+.hidden{
+    display: none;
+}
 /* HEADER  */
 .site-header h1{
     text-transform: uppercase;
@@ -130,27 +133,27 @@ h4
     text-decoration: none;
     color: var(--logoprimario);
 }
-.abrir-menu{
+.abrir-menu, .menu-contacto{
 text-align: center;
 padding: 1rem;
 background-color: var(--colorprimario);
 /* position: absolute;
 z-index: 1; */
 }
-.abrir-menu p{
+.abrir-menu p, .menu-contacto p{
     color: #f2f7ff;
     margin: 0;
 }
 @media (min-width: 768px){
-    .abrir-menu{
+    .abrir-menu, .menu-contacto p{
         display: none;
     }
 }
-.abrir-menu img{
+.abrir-menu img, .menu-contacto img{
     width: 5rem;
     vertical-align: middle;
 }
-.menu-mobile{
+.menu-mobile, .contacto-mobile{
     display: none;
     position: absolute;
     text-align: center;
@@ -163,11 +166,11 @@ z-index: 1; */
     overflow-x: hidden;
 }
 @media (min-width: 768px){
-    .menu-mobile{
+    .menu-mobile, .contacto-mobile{
         display: none;
     }
 }
-.menu-mobile a{
+.menu-mobile a, .contacto-mobile a{
     padding: 1.5rem;
     display: block;
     text-transform: uppercase;
@@ -175,15 +178,15 @@ z-index: 1; */
     text-decoration: none;
     border-bottom: 2px solid var(--logoprimario);
 }
-.menu-mobile p{
+.menu-mobile p, .contacto-mobile p{
     color: #f2f7ff;
     margin: 0;
 }
-.menu-mobile img{
+.menu-mobile img, .contacto-mobile img{
     width: 5rem;
     vertical-align: middle;
 }
-.menu-mobile a:last-of-type{
+.menu-mobile a:last-of-type, .contacto-mobile a:last-of-type{
     border: 0;
 }
 .background-video{
