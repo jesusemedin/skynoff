@@ -74,8 +74,8 @@ h4
     left:0;/*pocisionamiento en X*/
     z-index:9999; /* Le asignamos la pocisión más alta en el DOM */
     background-color:#ffffff; /* le asignamos un color de fondo */
-    width:100vw; /* maximo ancho de la pantalla */
-    height:100vh; /* maxima altura de la pantalla */
+    width:100%; /* maximo ancho de la pantalla */
+    height:100%; /* maxima altura de la pantalla */
     display:block; /* mostramos el layer */
     display: flex;
     flex-direction: column;
@@ -141,7 +141,8 @@ z-index: 1; */
     position: absolute;
     text-align: center;
     z-index: 2;
-    height: 110vh;
+    /* height: 110vh; */
+    height: 100%;
     width: 100%;
     padding: 1rem;
     background-color: var(--colorprimario);
