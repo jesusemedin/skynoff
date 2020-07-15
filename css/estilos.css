@@ -390,3 +390,115 @@ text-align: center;
     text-align: center;
     color: var(--colorsecundario);
 }
+/*============================================================================================= PAGINAS INTERNAS =====================================================================================*/
+/* CONTACTO */
+.formulario-contacto{
+    background-image: url(../img/contacto.jpg);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    padding: 1rem;
+
+    position: relative;
+    z-index: 1;
+}
+.formulario-contacto::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(242, 247, 255, 0.7);
+}
+.formulario{
+    position: relative;
+    z-index: 2;
+}
+.formulario h2{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--logoprimario);
+}
+.formulario label{
+    display: block;
+}
+.boton{
+    padding: 1rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color: var(--colorprimario);
+    border: 0;
+    color: var(--colorsecundario);
+    margin-top: 2rem;
+}
+.contenido-contacto{
+    text-align: center;
+}
+.contenido-contacto h3{
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--logoprimario);
+}
+
+/* PAGINA INTERNA DE CONTACTO (HTML) */
+.formulario-contacto-page{
+    background-image: url(../img/contacto.jpg);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    padding: 1rem;
+
+    position: relative;
+    z-index: 1;
+}
+.formulario-contacto-page::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(242, 247, 255, 0.7);
+}
+.formulario-page{
+    position: relative;
+    z-index: 2;
+}
+.formulario-page h1{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--logoprimario);
+}
+.formulario-page label{
+    display: block;
+}
+.formulario-contacto-page input{
+    width: 50%;
+    height: 5rem;
+    text-align: center;
+}
+.formulario-contacto-page textarea{
+    width: 50%;
+    height: 5rem;
+    text-align: center;
+}
+.contenido-contacto-page{
+    text-align: center;
+}
+.contenido-contacto-page h3{
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--logoprimario);
+}

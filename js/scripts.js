@@ -3,9 +3,10 @@ $('document').ready(function(){
     $('.cargando').fadeOut('1000')
     console.log("DOM loaded");
 
+    // MENU MOBILE
     $('.contacto').hide();
     $('.menu-contacto').hide();
-    //MENU
+
     $('.abrir-menu').on('click', function(){
         $('.site-header').hide();
         $('.trabajos-clientes').hide();
@@ -45,11 +46,6 @@ $('document').ready(function(){
     })
 
     $('.contacto-mobile img').on('click', function(){
-        // $('.site-header').hide();
-        // $('.trabajos-clientes').hide();
-        // $('.nuestra-gente').hide();
-        // $('.nosotros').hide();
-        // $('.abrir-menu').hide();
         $('.site-footer').show();
         $('.contacto').show();
         $('.contacto-mobile').fadeOut(300);
@@ -68,4 +64,5 @@ $('document').ready(function(){
         $('.abrir-menu').show();
 
     })
+    // END MENU MOBILE FUNCTIONS
 });
